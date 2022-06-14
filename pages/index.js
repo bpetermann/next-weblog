@@ -1,4 +1,5 @@
-import Slider from '../components/layout/Slider';
+import Slider from '../components/homepage/Slider';
+import Introduction from '../components/homepage/Introduction';
 
 const DUMMY_POSTS = [
   {
@@ -18,8 +19,8 @@ const DUMMY_POSTS = [
 const HomePage = () => {
   return (
     <div>
-      <h1>Home Page</h1>
       <Slider posts={DUMMY_POSTS} />
+      <Introduction />
     </div>
   );
 };

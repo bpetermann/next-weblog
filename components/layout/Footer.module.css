@@ -1,0 +1,21 @@
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-base-200);
+}
+
+.icon-container {
+  width: 75%;
+  max-width: 25rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+div.icon-container > * {
+  color: var(--color-primary);
+}

@@ -6,7 +6,7 @@ import { AiOutlineSearch } from 'react-icons/ai';
 const Navbar = () => {
   return (
     <header className={styles['fixed']}>
-      <div className={styles['navbar']}>
+        <div className={styles['navbar']}>
           <div className={styles['navbar-left']}>
             <GiHamburgerMenu size={26} className={styles['hamburger']} />
             <Link href='/'>
