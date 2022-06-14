@@ -25,10 +25,19 @@
   align-items: center;
 }
 
-.hamburger {
+.burger-button {
   color: var(--color-neutral);
   vertical-align: middle;
-  margin-right: var(--size-8);
+}
+
+.mobile-posts-link {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.mobile-posts-link:hover {
+  background-color: var(--color-base-300);
+  border-radius: var(--size-2);
 }
 
 .logo h2 {
@@ -84,7 +93,7 @@
     justify-content: space-between;
   }
 
-  .hamburger {
+  .burger-button {
     display: none;
   }
 

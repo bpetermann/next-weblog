@@ -1,11 +1,20 @@
-import React from 'react';
+import PostsOverview from '../../components/posts/PostsOverview';
+import { DUMMY_POSTS } from '../../lib/posts-util';
 
-const AllPosts = () => {
+const AllPosts = ({ posts }) => {
   return (
-    <div>
-      <h1 style={{ margin: '1rem' }}>All Posts</h1>
-    </div>
+    <>
+      <PostsOverview posts={posts} />
+    </>
   );
 };
+
+export async function getStaticProps() {
+  return {
+    props: {
+      posts: DUMMY_POSTS,
+    },
+  };
+}
 
 export default AllPosts;
