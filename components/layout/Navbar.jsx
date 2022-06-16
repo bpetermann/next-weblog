@@ -2,6 +2,7 @@ import styles from './Navbar.module.css';
 import Link from 'next/link';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineSearch } from 'react-icons/ai';
+import { BsFillTriangleFill } from 'react-icons/bs';
 
 const Navbar = () => {
   return (
@@ -16,6 +17,10 @@ const Navbar = () => {
           <Link href='/'>
             <a className={styles['logo']}>
               <h2>
+                <BsFillTriangleFill
+                  size={20}
+                  className={styles['logo-icon']}
+                />
                 <span>next</span>Blog
               </h2>
             </a>

@@ -3,7 +3,8 @@ import Image from 'next/image';
 import styles from './PostsOverviewItem.module.css';
 
 const PostsOverviewItem = ({ post }) => {
-  const { id, title, image, content } = post;
+  const { id, title, image } = post.data;
+  const { content } = post;
 
   const preview = content.slice(0, 100);
   const linkPath = `/posts/${id}`;

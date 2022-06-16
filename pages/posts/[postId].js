@@ -1,5 +1,5 @@
 import PostDetail from '../../components/posts/PostDetail';
-import { DUMMY_POSTS } from '../../lib/posts-util';
+import { DUMMY_POSTS, getAllPosts } from '../../lib/posts-util';
 
 const BlogPost = ({ post }) => {
   return (
@@ -11,7 +11,8 @@ const BlogPost = ({ post }) => {
 
 export async function getStaticProps(context) {
   const postId = context.params.postId;
-  const getPost = DUMMY_POSTS.find((post) => post.id === postId);
+  const allPosts = getAllPosts();
+  const getPost = allPosts.find((post) => post.data.id === postId);
 
   return {
     props: {
@@ -21,7 +22,9 @@ export async function getStaticProps(context) {
 }
 
 export function getStaticPaths() {
-  const ids = DUMMY_POSTS.map((post) => post.id);
+  const allPosts = getAllPosts();
+  const ids = allPosts.map((post) => post.data.id);
+
   const pathsWithParams = ids.map((id) => ({ params: { postId: id } }));
 
   return {

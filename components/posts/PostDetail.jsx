@@ -3,7 +3,8 @@ import Image from 'next/image';
 import styles from './PostDetail.module.css';
 
 const PostDetail = ({ post }) => {
-  const { title, image, content } = post;
+  const { content } = post;
+  const { title, image } = post.data;
   const imagePath = `/images/posts/${image}`;
 
   return (

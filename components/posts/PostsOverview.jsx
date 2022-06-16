@@ -6,7 +6,7 @@ const PostsOverview = ({ posts }) => {
   return (
     <ul className={styles['container']}>
       {posts.map((post) => (
-        <PostsOverviewItem post={post} key={post.id} />
+        <PostsOverviewItem post={post} key={post.data.id} />
       ))}
     </ul>
   );

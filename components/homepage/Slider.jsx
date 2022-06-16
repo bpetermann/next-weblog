@@ -16,12 +16,12 @@ const Slider = ({ posts }) => {
       className={styles['swiper']}
     >
       {posts.map((post) => (
-        <SwiperSlide key={post.id}>
+        <SwiperSlide key={post.data.id}>
           <div className={styles['swiper-slider-div']}>
-            <Link href={`/posts/${post.id}`}>
+            <Link href={`/posts/${post.data.id}`}>
               <a>
                 <Image
-                  src={`/images/posts/${post.image}`}
+                  src={`/images/posts/${post.data.image}`}
                   alt={post.title}
                   width={2400}
                   height={1600}
@@ -29,7 +29,7 @@ const Slider = ({ posts }) => {
                 />
               </a>
             </Link>
-            <p className={styles['swiper-slider-text']}>{post.title}</p>
+            <p className={styles['swiper-slider-text']}>{post.data.title}</p>
           </div>
         </SwiperSlide>
       ))}

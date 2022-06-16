@@ -1,15 +1,24 @@
 import Slider from '../components/homepage/Slider';
 import Introduction from '../components/homepage/Introduction';
-import { DUMMY_POSTS } from '../lib/posts-util';
+import { getAllPosts } from '../lib/posts-util';
 
-const HomePage = () => {
+const HomePage = ({ posts }) => {
   return (
     <div>
-      <Slider posts={DUMMY_POSTS} />
+      <Slider posts={posts} />
       <Introduction />
     </div>
   );
 };
 
+export async function getStaticProps() {
+  const posts = getAllPosts();
+
+  return {
+    props: {
+      posts: posts,
+    },
+  };
+}
 
 export default HomePage;

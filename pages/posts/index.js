@@ -1,5 +1,5 @@
 import PostsOverview from '../../components/posts/PostsOverview';
-import { DUMMY_POSTS } from '../../lib/posts-util';
+import { getAllPosts } from '../../lib/posts-util';
 
 const AllPosts = ({ posts }) => {
   return (
@@ -10,9 +10,11 @@ const AllPosts = ({ posts }) => {
 };
 
 export async function getStaticProps() {
+  const posts = getAllPosts();
+
   return {
     props: {
-      posts: DUMMY_POSTS,
+      posts: posts,
     },
   };
 }
