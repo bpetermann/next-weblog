@@ -1,5 +1,5 @@
 import PostDetail from '../../components/posts/PostDetail';
-import { DUMMY_POSTS, getAllPosts } from '../../lib/posts-util';
+import { DUMMY_POSTS, getAllPosts, getSinglePost } from '../../lib/posts-util';
 
 const BlogPost = ({ post }) => {
   return (
@@ -11,8 +11,7 @@ const BlogPost = ({ post }) => {
 
 export async function getStaticProps(context) {
   const postId = context.params.postId;
-  const allPosts = getAllPosts();
-  const getPost = allPosts.find((post) => post.data.id === postId);
+  const getPost = getSinglePost(postId);
 
   return {
     props: {

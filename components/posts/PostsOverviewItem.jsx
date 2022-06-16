@@ -1,12 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './PostsOverviewItem.module.css';
+import ReactMarkdown from 'react-markdown';
 
 const PostsOverviewItem = ({ post }) => {
-  const { id, title, image } = post.data;
-  const { content } = post;
-
-  const preview = content.slice(0, 100);
+  const { id, title, image, preview } = post.data;
   const linkPath = `/posts/${id}`;
   const imagePath = `/images/posts/${image}`;
 

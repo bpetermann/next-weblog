@@ -10,6 +10,15 @@
   border-bottom: var(--border) solid #e5e7eb;
 }
 
+.image {
+  width: 18.75rem;
+  height: 18.75rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
 .header h1 {
   font-size: var(--size-10);
   color: var(--color-base-content);
@@ -23,8 +32,7 @@
   height: 120px;
 }
 
-.content{
-  background-color: grey;
+.content {
   width: 95%;
   margin: 0 auto;
 }

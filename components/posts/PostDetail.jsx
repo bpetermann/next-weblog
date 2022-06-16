@@ -11,7 +11,9 @@ const PostDetail = ({ post }) => {
     <article>
       <header className={styles['header']}>
         <h1>{title}</h1>
-        <Image src={imagePath} alt={title} width={200} height={150} />
+        <div className={styles['image']}>
+          <Image src={imagePath} alt={title} width={300} height={300} />
+        </div>
       </header>
       <div className={styles['content']}>
         <ReactMarkdown>{content}</ReactMarkdown>
