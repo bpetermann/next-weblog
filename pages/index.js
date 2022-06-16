@@ -1,13 +1,18 @@
 import Slider from '../components/homepage/Slider';
 import Introduction from '../components/homepage/Introduction';
 import { getAllPosts } from '../lib/posts-util';
+import Head from 'next/head';
 
 const HomePage = ({ posts }) => {
   return (
-    <div>
+    <>
+     <Head>
+        <title>nextBlog</title>
+        <meta name='description' content='Welcome to my Blog' />
+      </Head>
       <Slider posts={posts} />
       <Introduction />
-    </div>
+    </>
   );
 };
 

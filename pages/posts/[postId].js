@@ -1,9 +1,14 @@
 import PostDetail from '../../components/posts/PostDetail';
-import { DUMMY_POSTS, getAllPosts, getSinglePost } from '../../lib/posts-util';
+import { getAllPosts, getSinglePost } from '../../lib/posts-util';
+import Head from 'next/head';
 
 const BlogPost = ({ post }) => {
   return (
     <>
+      <Head>
+        <title>nextBlog {post.data.title}</title>
+        <meta name='description' content='{post.data.title}' />
+      </Head>
       <PostDetail post={post} />
     </>
   );
