@@ -1,10 +1,11 @@
+import PostDetail from '../../components/posts/PostDetail';
 import { DUMMY_POSTS } from '../../lib/posts-util';
 
 const BlogPost = ({ post }) => {
   return (
-    <div>
-      <h1>{post.title}</h1>
-    </div>
+    <>
+      <PostDetail post={post} />
+    </>
   );
 };
 

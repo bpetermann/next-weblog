@@ -21,7 +21,7 @@ const Slider = ({ posts }) => {
             <Link href={`/posts/${post.id}`}>
               <a>
                 <Image
-                  src={`/images/${post.image}`}
+                  src={`/images/posts/${post.image}`}
                   alt={post.title}
                   width={2400}
                   height={1600}
