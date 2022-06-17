@@ -16,7 +16,7 @@ const Slider = ({ posts, slides, width, height }) => {
       className={styles['swiper']}
     >
       {posts.map((post) => (
-        <SwiperSlide>
+        <SwiperSlide key={post.data.id}>
           <div className={styles['swiper-slider-div']}>
             <Link href={`/posts/${post.data.id}`}>
               <a>
