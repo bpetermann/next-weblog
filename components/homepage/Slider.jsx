@@ -6,25 +6,25 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper';
 import styles from './Slider.module.css';
 
-const Slider = ({ posts }) => {
+const Slider = ({ posts, slides, width, height }) => {
   return (
     <Swiper
-      slidesPerView={1}
+      slidesPerView={slides}
       pagination={true}
       modules={[Pagination]}
       navigation
       className={styles['swiper']}
     >
       {posts.map((post) => (
-        <SwiperSlide key={post.data.id}>
+        <SwiperSlide>
           <div className={styles['swiper-slider-div']}>
             <Link href={`/posts/${post.data.id}`}>
               <a>
                 <Image
                   src={`/images/posts/${post.data.image}`}
                   alt={post.title}
-                  width={2400}
-                  height={1600}
+                  width={width}
+                  height={height}
                   layout='responsive'
                 />
               </a>

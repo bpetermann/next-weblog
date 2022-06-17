@@ -4,7 +4,7 @@
   top: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  border-bottom: var(--border) solid #e5e7eb;
+  border-bottom: var(--border) solid var(--color-border);
   padding: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;

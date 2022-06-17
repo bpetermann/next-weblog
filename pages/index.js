@@ -6,12 +6,13 @@ import Head from 'next/head';
 const HomePage = ({ posts }) => {
   return (
     <>
-     <Head>
+      <Head>
         <title>nextBlog</title>
         <meta name='description' content='Welcome to my Blog' />
       </Head>
-      <Slider posts={posts} />
+      <Slider posts={posts} slides={1} width={2400} height={1600} />
       <Introduction />
+      <Slider posts={posts} slides={3} width={300} height={200} />
     </>
   );
 };

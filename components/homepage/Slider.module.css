@@ -12,6 +12,7 @@
   color: var(--color-base);
   position: absolute;
   top: 15%;
+  left: 0%;
   font-weight: 600;
   max-width: 90%;
   font-size: 1.25rem;

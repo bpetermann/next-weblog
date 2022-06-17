@@ -1,13 +1,11 @@
 .hero {
   text-align: center;
   padding: var(--size-8) 0;
-}
-
-.image img {
-  object-fit: cover;
-  object-position: top;
-  width: 100%;
-  height: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .hero h1 {
@@ -25,6 +23,9 @@
 }
 
 @media (min-width: 40rem) {
+  .hero {
+    height: 20rem;
+  }
   .hero h1 {
     font-size: var(--size-16);
     margin: var(--size-4) 0;

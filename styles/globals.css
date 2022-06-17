@@ -34,6 +34,8 @@ body {
   --color-error: #f87272;
   --color-error-content: #470000;
 
+  --color-border: #e5e7eb;
+
   --border: 0.06rem;
 
   --size-1: 0.25rem;
