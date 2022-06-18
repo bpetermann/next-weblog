@@ -1,10 +1,14 @@
+import React, { useContext } from 'react';
 import styles from './Navbar.module.css';
 import Link from 'next/link';
 import Logo from './Logo';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineSearch } from 'react-icons/ai';
+import SearchContext from '../../store/search-context';
 
 const Navbar = () => {
+  const { searchTermChange } = useContext(SearchContext);
+
   return (
     <header className={styles['fixed']}>
       <div className={styles['navbar']}>
@@ -29,6 +33,7 @@ const Navbar = () => {
             className={styles['search']}
             type='text'
             placeholder='Search...'
+            onChange={(e) => searchTermChange(e.target.value)}
           />
         </div>
       </div>

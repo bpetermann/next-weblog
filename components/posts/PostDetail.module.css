@@ -34,7 +34,8 @@
 
 .content {
   width: 95%;
-  margin: 1.75rem auto;
+  margin: 0 auto;
+  margin-top: 1.75rem;
 }
 
 @media (min-width: 40rem) {

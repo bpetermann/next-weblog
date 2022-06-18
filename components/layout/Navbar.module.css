@@ -68,6 +68,10 @@
   padding-right: 1rem;
 }
 
+.search:focus {
+  outline: 0.14rem solid var(--color-primary);
+}
+
 .search-icon {
   position: absolute;
   color: var(--color-neutral);
