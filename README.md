@@ -22,8 +22,10 @@ yarn dev
 ### Tools
 
 - [nextjs](https://nextjs.org/)
+- [swiper js](https://swiperjs.com/react)
 - [react-markdown](https://www.npmjs.com/package/react-markdown)
 - [react-icons](https://react-icons.github.io/react-icons/)
+- [gray-matter](https://www.npmjs.com/package/gray-matter)
 
 ### Thanks
 

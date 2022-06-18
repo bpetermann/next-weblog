@@ -40,25 +40,6 @@
   border-radius: var(--size-2);
 }
 
-.logo h2 {
-  padding: 0.5rem;
-}
-
-.logo h2:hover {
-  background-color: var(--color-base-300);
-  border-radius: var(--size-2);
-}
-
-.logo span {
-  color: var(--color-primary);
-}
-
-.logo-icon {
-  color: var(--color-primary);
-  margin-bottom: -0.1rem;
-  margin-right: 0.2rem;
-}
-
 .all-posts-link {
   display: none;
 }

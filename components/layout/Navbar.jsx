@@ -1,8 +1,8 @@
 import styles from './Navbar.module.css';
 import Link from 'next/link';
+import Logo from './Logo';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineSearch } from 'react-icons/ai';
-import { BsFillTriangleFill } from 'react-icons/bs';
 
 const Navbar = () => {
   return (
@@ -14,19 +14,8 @@ const Navbar = () => {
               <GiHamburgerMenu size={26} className={styles['burger-button']} />
             </a>
           </Link>
-          <Link href='/'>
-            <a className={styles['logo']}>
-              <h2>
-                <BsFillTriangleFill
-                  size={20}
-                  className={styles['logo-icon']}
-                />
-                <span>next</span>Blog
-              </h2>
-            </a>
-          </Link>
+          <Logo />
         </div>
-
         <div className={styles['navbar-center']}>
           <Link href='/posts'>
             <a className={styles['all-posts-link']}>
