@@ -4,6 +4,7 @@ date: '2022-10-16'
 image: writing.png
 id: '1'
 preview: 'You cant use up creativity'
+tags: 'Creativity, Lifestyle, Philosophy'
 latest: true
 ---
 

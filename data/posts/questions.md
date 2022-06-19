@@ -4,6 +4,7 @@ date: '2022-10-15'
 image: questions.png
 id: '3'
 preview: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
+tags: 'Questions, Philosophy'
 latest: true
 ---
 

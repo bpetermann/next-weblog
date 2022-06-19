@@ -6,10 +6,10 @@ const SearchContext = React.createContext({
 });
 
 export const SearchContextProvider = (props) => {
-  const [searchTerm, setSearchTerm] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const searchTermChangeHandler = (text) => {
-    setSearchTerm(text.toLowerCase());
+    setSearchTerm(text);
   };
 
   return (

@@ -8,7 +8,7 @@ const AllPosts = ({ posts }) => {
   const { searchTerm } = useContext(SearchContext);
 
   let filteredPosts = posts.filter((post) => {
-    return post.data.title.toLowerCase().includes(searchTerm);
+    return post.data.tags.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
   return (

@@ -4,12 +4,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper';
-import styles from './Slider.module.css';
+import styles from './PreviewSlider.module.css';
 
-const Slider = ({ posts, slides, width, height }) => {
+const PreviewSlider = ({ posts }) => {
   return (
     <Swiper
-      slidesPerView={slides}
+      slidesPerView={1}
       pagination={true}
       modules={[Pagination]}
       navigation
@@ -17,14 +17,17 @@ const Slider = ({ posts, slides, width, height }) => {
     >
       {posts.map((post) => (
         <SwiperSlide key={post.data.id}>
-          <div className={styles['swiper-slider-div']}>
+          <div
+            className={styles['swiper-slider-div']}
+            onClick={() => test(post.data.id)}
+          >
             <Link href={`/posts/${post.data.id}`}>
               <a>
                 <Image
                   src={`/images/posts/${post.data.image}`}
                   alt={post.title}
-                  width={width}
-                  height={height}
+                  width={2400}
+                  height={1600}
                   layout='responsive'
                 />
               </a>
@@ -37,4 +40,4 @@ const Slider = ({ posts, slides, width, height }) => {
   );
 };
 
-export default Slider;
+export default PreviewSlider;

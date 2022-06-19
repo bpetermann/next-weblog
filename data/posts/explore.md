@@ -4,6 +4,7 @@ date: '2022-10-15'
 image: explore.png
 id: '2'
 preview: '"To reach for new heights and reveal the unknown so that what we do and learn will benefit all humankind"'
+tags: 'Explore, Science'
 latest: true
 ---
 

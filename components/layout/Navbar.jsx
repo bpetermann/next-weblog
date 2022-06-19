@@ -7,14 +7,17 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import SearchContext from '../../store/search-context';
 
 const Navbar = () => {
-  const { searchTermChange } = useContext(SearchContext);
+  const { searchTermChange, searchTerm } = useContext(SearchContext);
 
   return (
     <header className={styles['fixed']}>
       <div className={styles['navbar']}>
         <div className={styles['navbar-left']}>
           <Link href='/posts'>
-            <a className={styles['mobile-posts-link']}>
+            <a
+              className={styles['mobile-posts-link']}
+              onClick={() => searchTermChange('')}
+            >
               <GiHamburgerMenu size={26} className={styles['burger-button']} />
             </a>
           </Link>
@@ -23,7 +26,7 @@ const Navbar = () => {
         <div className={styles['navbar-center']}>
           <Link href='/posts'>
             <a className={styles['all-posts-link']}>
-              <h2>All Posts</h2>
+              <h2 onClick={() => searchTermChange('')}>All Posts</h2>
             </a>
           </Link>
         </div>
@@ -33,6 +36,7 @@ const Navbar = () => {
             className={styles['search']}
             type='text'
             placeholder='Search...'
+            value={searchTerm}
             onChange={(e) => searchTermChange(e.target.value)}
           />
         </div>

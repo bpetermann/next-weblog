@@ -7,3 +7,20 @@
   gap: 1.5rem;
   align-content: center;
 }
+
+.no-post-info {
+  text-align: center;
+  margin: auto;
+  border-radius: var(--size-2);
+  outline: 0.14rem solid var(--color-error);
+  border-radius: 1rem;
+  padding: 0.12rem;
+  width: 75%;
+  max-width: 20rem;
+}
+
+.no-post-info p {
+  font-size: 1.25rem;
+  color: var(--color-error);
+  font-weight: 600;
+}
