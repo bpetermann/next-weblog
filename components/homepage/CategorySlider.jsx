@@ -28,7 +28,7 @@ const CategorySlider = ({ categories }) => {
             <Link href={`/posts/`}>
               <a>
                 <Image
-                  src={`/images/categories/${category.name}.png`}
+                  src={`/images/categories/${category.image}`}
                   alt={category.name}
                   width={300}
                   height={200}
