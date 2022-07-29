@@ -18,6 +18,7 @@ const CategorySlider = ({ categories }) => {
       modules={[Pagination]}
       navigation
       className={styles['swiper']}
+      style={{ backgroundColor: '#000' }}
     >
       {categories.map((category) => (
         <SwiperSlide key={category.id}>
