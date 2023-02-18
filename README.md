@@ -7,7 +7,6 @@
 
 - Blogpost project built with nextjs
 - Using getstaticprops, next/image, etc.
-- [View Live on Vercel](https://next-weblog.vercel.app/)
 
 ## Getting Started
 
