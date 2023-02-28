@@ -12,7 +12,7 @@
 
 ```
 git clone https://github.com/bpetermann/next-weblog.git
-cd next-shopping-cart
+cd next-weblog
 npm install
 npm run dev
 # or
